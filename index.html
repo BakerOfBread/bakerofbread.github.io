@@ -170,55 +170,61 @@
 
         <label>
           Item selection
-          <select name="bread_type" required>
-            <option value="" disabled selected>Select an item</option>
+          <fieldset class="order-group">
+        <legend>Items requested</legend>
 
-            <optgroup label="Round loaves">
-              <option>Country sourdough – full</option>
-              <option>Country sourdough – half</option>
-              <option>Rye – full</option>
-              <option>Rye – half</option>
-              <option>Cinnamon swirl – full</option>
-              <option>Cinnamon swirl – half</option>
-              <option>Pumpernickel – full</option>
-              <option>Pumpernickel – half</option>
-              <option>Wheat – full</option>
-              <option>Wheat – half</option>
-              <option>White – full</option>
-              <option>White – half</option>
-              <option>Seeded multigrain – full</option>
-              <option>Seeded multigrain – half</option>
-              <option>Jalapeño cheddar – full</option>
-              <option>Jalapeño cheddar – half</option>
-              <option>Rosemary olive oil – full</option>
-              <option>Rosemary olive oil – half</option>
-            </optgroup>
+        <p class="order-note">Select all items you would like to order.</p>
 
-            <optgroup label="Breadsticks">
-              <option>Soft breadsticks (6-pack)</option>
-              <option>Hard breadsticks (12-pack)</option>
-            </optgroup>
+        <div class="order-category">
+          <strong>Round loaves</strong>
+          <label><input type="checkbox" name="items[]" value="Country sourdough – full"> Country sourdough (full)</label>
+          <label><input type="checkbox" name="items[]" value="Country sourdough – half"> Country sourdough (half)</label>
+          <label><input type="checkbox" name="items[]" value="Rye – full"> Rye (full)</label>
+          <label><input type="checkbox" name="items[]" value="Rye – half"> Rye (half)</label>
+          <label><input type="checkbox" name="items[]" value="Cinnamon swirl – full"> Cinnamon swirl (full)</label>
+          <label><input type="checkbox" name="items[]" value="Cinnamon swirl – half"> Cinnamon swirl (half)</label>
+          <label><input type="checkbox" name="items[]" value="Pumpernickel – full"> Pumpernickel (full)</label>
+          <label><input type="checkbox" name="items[]" value="Pumpernickel – half"> Pumpernickel (half)</label>
+          <label><input type="checkbox" name="items[]" value="Wheat – full"> Wheat (full)</label>
+          <label><input type="checkbox" name="items[]" value="Wheat – half"> Wheat (half)</label>
+          <label><input type="checkbox" name="items[]" value="White – full"> White (full)</label>
+          <label><input type="checkbox" name="items[]" value="White – half"> White (half)</label>
+          <label><input type="checkbox" name="items[]" value="Seeded multigrain – full"> Seeded multigrain (full)</label>
+          <label><input type="checkbox" name="items[]" value="Seeded multigrain – half"> Seeded multigrain (half)</label>
+          <label><input type="checkbox" name="items[]" value="Jalapeño cheddar – full"> Jalapeño cheddar (full)</label>
+          <label><input type="checkbox" name="items[]" value="Jalapeño cheddar – half"> Jalapeño cheddar (half)</label>
+          <label><input type="checkbox" name="items[]" value="Rosemary olive oil – full"> Rosemary olive oil (full)</label>
+          <label><input type="checkbox" name="items[]" value="Rosemary olive oil – half"> Rosemary olive oil (half)</label>
+        </div>
 
-            <optgroup label="Bite packs">
-              <option>Veggie savory bites</option>
-              <option>Veggie heat bites</option>
-              <option>Veggie sweet heat bites</option>
-              <option>Pepperoni bites</option>
-              <option>Three cheese bites</option>
-              <option>Steak bites</option>
-              <option>Sausage veggie mornin muffins</option>
-              <option>Egg and cheeses mornin muffins</option>
-              <option>Cheese mornin muffins</option>
-              <option>Banana nut cake bread bites</option>
-              <option>Lemon poppy cake bread bites</option>
-              <option>Chocolate chip cake bread bites</option>
-              <option>Cinnamon streusel cake bread bites</option>
-            </optgroup>
+        <div class="order-category">
+          <strong>Breadsticks</strong>
+          <label><input type="checkbox" name="items[]" value="Soft breadsticks (6-pack)"> Soft breadsticks (6-pack)</label>
+          <label><input type="checkbox" name="items[]" value="Hard breadsticks (12-pack)"> Hard breadsticks (12-pack)</label>
+        </div>
 
-            <optgroup label="Starter">
-              <option>Heritage sourdough starter pouch</option>
-            </optgroup>
-          </select>
+        <div class="order-category">
+          <strong>Bite packs</strong>
+          <label><input type="checkbox" name="items[]" value="Veggie savory bites"> Veggie savory bites</label>
+          <label><input type="checkbox" name="items[]" value="Veggie heat bites"> Veggie heat bites</label>
+          <label><input type="checkbox" name="items[]" value="Veggie sweet heat bites"> Veggie sweet heat bites</label>
+          <label><input type="checkbox" name="items[]" value="Pepperoni bites"> Pepperoni bites</label>
+          <label><input type="checkbox" name="items[]" value="Three cheese bites"> Three cheese bites</label>
+          <label><input type="checkbox" name="items[]" value="Steak bites"> Steak bites</label>
+          <label><input type="checkbox" name="items[]" value="Sausage veggie mornin muffins"> Sausage veggie mornin muffins</label>
+          <label><input type="checkbox" name="items[]" value="Egg and cheeses mornin muffins"> Egg and cheeses mornin muffins</label>
+          <label><input type="checkbox" name="items[]" value="Cheese mornin muffins"> Cheese mornin muffins</label>
+          <label><input type="checkbox" name="items[]" value="Banana nut cake bread bites"> Banana nut cake bread bites</label>
+          <label><input type="checkbox" name="items[]" value="Lemon poppy cake bread bites"> Lemon poppy cake bread bites</label>
+          <label><input type="checkbox" name="items[]" value="Chocolate chip cake bread bites"> Chocolate chip cake bread bites</label>
+          <label><input type="checkbox" name="items[]" value="Cinnamon streusel cake bread bites"> Cinnamon streusel cake bread bites</label>
+        </div>
+
+        <div class="order-category">
+          <strong>Starter</strong>
+          <label><input type="checkbox" name="items[]" value="Heritage sourdough starter pouch"> Heritage sourdough starter pouch</label>
+        </div>
+</fieldset>
         </label>
 
         <label>
