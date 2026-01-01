@@ -129,6 +129,35 @@ form {
   margin: 4px 0 8px 0;
 }
 
+.pay-card {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fffdfa;
+}
+
+.pay-card h3 {
+  margin: 0 0 10px 0;
+}
+
+.pay-line {
+  margin: 6px 0;
+  color: var(--text-main);
+}
+
+.pay-instructions {
+  margin: 10px 0;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.pay-policy {
+  margin: 10px 0 0 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
 
 label {
   display: grid;

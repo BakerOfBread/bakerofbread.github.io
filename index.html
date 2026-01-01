@@ -233,6 +233,35 @@
         <button type="submit">Submit Order</button>
       </form>
 
+<section class="pay-card" aria-live="polite">
+  <h3>Pre-payment</h3>
+
+  <p class="pay-line">
+    Estimated total: <strong id="orderTotal">$0.00</strong>
+  </p>
+
+  <p class="pay-line">
+    Venmo: <strong id="venmoHandle">@REPLACE_WITH_YOUR_VENMO</strong>
+  </p>
+
+  <p class="pay-instructions">
+    After you submit the order form, you will receive a reference number.
+    Please send the total to Venmo and include your <strong>name</strong> and
+    <strong>reference number</strong> in the Venmo note.
+  </p>
+
+  <p class="pay-instructions">
+    Reference number: <strong id="payRef">Will appear after submission</strong>
+  </p>
+
+  <p class="pay-policy">
+    Orders are processed after payment is received. Please send payment before baking begins.
+  </p>
+
+  <input type="hidden" id="orderTotalInput" name="order_total">
+</section>
+
+      
       <div id="successBox" class="success" hidden>
         <h3>Order received</h3>
         <p>Your reference number is <strong id="refText"></strong>.</p>
