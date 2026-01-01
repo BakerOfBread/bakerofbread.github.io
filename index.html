@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,6 +15,15 @@
       <h1>Baker of Bread</h1>
       <p class="tagline">Small-batch, old-world loaves baked to order</p>
     </header>
+
+    <section class="card about">
+      <h2>About</h2>
+      <p>
+        I bake small-batch bread using long fermentation and traditional methods,
+        focusing on flavor, texture, and simplicity. Each loaf is mixed, shaped,
+        and baked by hand, with limited weekly availability.
+      </p>
+    </section>
 
     <section class="card">
       <h2>Menu</h2>
@@ -80,3 +90,35 @@
             <option>Rosemary Sea Salt Focaccia</option>
           </select>
         </label>
+
+        <label>
+          Additional comments
+          <textarea name="notes" rows="4"
+            placeholder="Quantity, slicing preference, allergies, timing notes"></textarea>
+        </label>
+
+        <button type="submit">Submit Order</button>
+      </form>
+
+      <div id="successBox" class="success" hidden>
+        <h3>Order received</h3>
+        <p>Your reference number is <strong id="refText"></strong>.</p>
+        <p>I will confirm availability by email.</p>
+      </div>
+
+      <div id="errorBox" class="error" hidden>
+        <p>Submission failed. Please try again or contact me directly.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Phone: <a href="tel:12605551234">(260) 555-1234</a><br>
+        Email: <a href="mailto:you@example.com">you@example.com</a>
+      </p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
