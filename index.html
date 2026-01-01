@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,31 +27,119 @@
     <section class="card">
       <h2>Menu</h2>
 
+      <h3>Round loaves</h3>
+
       <div class="menu-item">
         <div class="menu-row">
-          <span>Sourdough Country Loaf</span>
+          <span>Country sourdough</span>
+          <span>$14 full / $9 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Rye</span>
+          <span>$15 full / $9.50 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Cinnamon swirl</span>
+          <span>$16 full / $10 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Pumpernickel</span>
+          <span>$15 full / $9.50 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Wheat</span>
+          <span>$14 full / $9 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>White</span>
+          <span>$13.50 full / $8.50 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Seeded multigrain</span>
+          <span>$15 full / $9.50 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Jalapeño cheddar</span>
+          <span>$17 full / $10 half</span>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Rosemary olive oil</span>
+          <span>$15 full / $9.50 half</span>
+        </div>
+      </div>
+
+      <h3>Breadsticks</h3>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Soft breadsticks (6-pack)</span>
           <span>$10</span>
         </div>
-        <p>Natural leaven, long fermentation, crackling crust.</p>
       </div>
 
       <div class="menu-item">
         <div class="menu-row">
-          <span>Honey Oat Loaf</span>
-          <span>$12</span>
+          <span>Hard breadsticks (12-pack)</span>
+          <span>$9.50</span>
         </div>
-        <p>Soft crumb, toasted oats, subtle sweetness.</p>
       </div>
+
+      <h3>Filled bite packs (12 bites)</h3>
+
+      <div class="menu-item"><div class="menu-row"><span>Veggie savory</span><span>$16</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Veggie heat</span><span>$16.50</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Veggie sweet heat</span><span>$16.50</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Pepperoni</span><span>$17.50</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Three cheese</span><span>$17.50</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Steak</span><span>$19</span></div></div>
+
+      <h3>Mornin muffin bite packs (6 bites)</h3>
+
+      <div class="menu-item"><div class="menu-row"><span>Sausage veggie</span><span>$15</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Egg and cheeses</span><span>$14.50</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Cheese</span><span>$14</span></div></div>
+
+      <h3>Cake bread bite packs (9 bites)</h3>
+
+      <div class="menu-item"><div class="menu-row"><span>Banana nut</span><span>$15.50</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Lemon poppy</span><span>$15</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Chocolate chip</span><span>$16</span></div></div>
+      <div class="menu-item"><div class="menu-row"><span>Cinnamon streusel</span><span>$15.50</span></div></div>
+
+      <h3>Starter</h3>
 
       <div class="menu-item">
         <div class="menu-row">
-          <span>Rosemary Sea Salt Focaccia</span>
-          <span>$14</span>
+          <span>Heritage sourdough starter (2 oz pouch)</span>
+          <span>$10</span>
         </div>
-        <p>Olive oil dough, crisp edges, fresh rosemary.</p>
       </div>
 
-      <p class="note">Pickup in Fort Wayne. Limited weekly availability.</p>
+      <p class="note">Pickup only. Items subject to weekly availability.</p>
     </section>
 
     <section class="card">
@@ -82,12 +169,55 @@
         </label>
 
         <label>
-          Bread selection
+          Item selection
           <select name="bread_type" required>
-            <option value="" disabled selected>Select a bread</option>
-            <option>Sourdough Country Loaf</option>
-            <option>Honey Oat Loaf</option>
-            <option>Rosemary Sea Salt Focaccia</option>
+            <option value="" disabled selected>Select an item</option>
+
+            <optgroup label="Round loaves">
+              <option>Country sourdough – full</option>
+              <option>Country sourdough – half</option>
+              <option>Rye – full</option>
+              <option>Rye – half</option>
+              <option>Cinnamon swirl – full</option>
+              <option>Cinnamon swirl – half</option>
+              <option>Pumpernickel – full</option>
+              <option>Pumpernickel – half</option>
+              <option>Wheat – full</option>
+              <option>Wheat – half</option>
+              <option>White – full</option>
+              <option>White – half</option>
+              <option>Seeded multigrain – full</option>
+              <option>Seeded multigrain – half</option>
+              <option>Jalapeño cheddar – full</option>
+              <option>Jalapeño cheddar – half</option>
+              <option>Rosemary olive oil – full</option>
+              <option>Rosemary olive oil – half</option>
+            </optgroup>
+
+            <optgroup label="Breadsticks">
+              <option>Soft breadsticks (6-pack)</option>
+              <option>Hard breadsticks (12-pack)</option>
+            </optgroup>
+
+            <optgroup label="Bite packs">
+              <option>Veggie savory bites</option>
+              <option>Veggie heat bites</option>
+              <option>Veggie sweet heat bites</option>
+              <option>Pepperoni bites</option>
+              <option>Three cheese bites</option>
+              <option>Steak bites</option>
+              <option>Sausage veggie mornin muffins</option>
+              <option>Egg and cheeses mornin muffins</option>
+              <option>Cheese mornin muffins</option>
+              <option>Banana nut cake bread bites</option>
+              <option>Lemon poppy cake bread bites</option>
+              <option>Chocolate chip cake bread bites</option>
+              <option>Cinnamon streusel cake bread bites</option>
+            </optgroup>
+
+            <optgroup label="Starter">
+              <option>Heritage sourdough starter pouch</option>
+            </optgroup>
           </select>
         </label>
 
