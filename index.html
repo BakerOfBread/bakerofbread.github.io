@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Baker of Bread</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Small-batch, old-world bread baked to order.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Baker of Bread</h1>
+      <p class="tagline">Small-batch, old-world loaves baked to order</p>
+    </header>
+
+    <section class="card">
+      <h2>Menu</h2>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Sourdough Country Loaf</span>
+          <span>$10</span>
+        </div>
+        <p>Natural leaven, long fermentation, crackling crust.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Honey Oat Loaf</span>
+          <span>$12</span>
+        </div>
+        <p>Soft crumb, toasted oats, subtle sweetness.</p>
+      </div>
+
+      <div class="menu-item">
+        <div class="menu-row">
+          <span>Rosemary Sea Salt Focaccia</span>
+          <span>$14</span>
+        </div>
+        <p>Olive oil dough, crisp edges, fresh rosemary.</p>
+      </div>
+
+      <p class="note">Pickup in Fort Wayne. Limited weekly availability.</p>
+    </section>
+
+    <section class="card">
+      <h2>Place an Order</h2>
+
+      <form id="orderForm" method="POST" action="https://formspree.io/f/REPLACE_ME">
+        <input type="hidden" id="orderRef" name="order_reference">
+
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" required>
+        </label>
+
+        <label>
+          Requested pickup date
+          <input type="date" name="pickup_date" required>
+        </label>
+
+        <label>
+          Bread selection
+          <select name="bread_type" required>
+            <option value="" disabled selected>Select a bread</option>
+            <option>Sourdough Country Loaf</option>
+            <option>Honey Oat Loaf</option>
+            <option>Rosemary Sea Salt Focaccia</option>
+          </select>
+        </label>
